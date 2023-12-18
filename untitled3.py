@@ -22,7 +22,7 @@ import plotly.graph_objects as go
 st.title('Diabestes Hospital Visualization')
 
 # Load the dataset
-data = pd.read_csv('/Diabestes_Hospital_Encounters (1).csv')
+data = pd.read_csv('Diabestes_Hospital_Encounters (1).csv')
 
 # Visualization 1: Bar Chart with Filters
 st.header("Visualization 1: Bar Chart with Filters")
