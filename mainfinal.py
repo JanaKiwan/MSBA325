@@ -55,7 +55,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 # Load your data
-data = pd.Diabestes_Hospital_Encounters(1).csv
+data = pd.read_csv('Diabestes_Hospital_Encounters(1).csv')
 
 
 
