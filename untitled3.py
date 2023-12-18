@@ -18,6 +18,54 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 
+# Set Streamlit theme
+st.set_page_config(
+    page_title="Hospital Encounters",
+
+    layout="wide",
+
+)
+# Set color palette for visualizations
+sns.set_palette("pastel")
+
+# Define the layout
+st.title("Hospital Encounters Dashboard")
+
+# Add CSS to set the background image for the title
+st.markdown(
+    """
+    <style>
+    h1 {
+        background-repeat: no-repeat;
+        background-color: lightblue;
+        background-position: center;
+        background-size: cover;
+        color: black;
+        padding: 1rem;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .left-column {
+        flex: 1;
+        padding-right: 1rem;
+        padding-top: 5rem;
+    }
+    .right-column {
+        flex: 1;
+        padding-left: 1rem;
+    }
+	.analytics-text {
+			font-size: 1rem;
+			text-align: left;
+			margin-top: 1rem;
+		}
+
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # Create a Streamlit app title
 st.title('Diabestes Hospital Visualization')
 
