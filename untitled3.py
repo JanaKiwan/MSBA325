@@ -10,7 +10,7 @@ Original file is located at
 #pip install plotly
 #pip install plotly pandas
 
-pip install streamlit
+#pip install streamlit
 
 import streamlit as st
 
