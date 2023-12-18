@@ -91,6 +91,11 @@ if selected_age_group != 'All':
 fig = px.bar(filtered_data, x='race', title='Patient Count by Race', labels={'race': 'Race', 'count': 'Patient Count'})
 st.plotly_chart(fig, use_container_width=True)
 
+# Description for Bar Graph
+st.markdown("The bar graph below displays the distribution of patients based on their racial backgrounds.")
+st.markdown("Each bar represents a specific race, and the height of the bar corresponds to the count of patients belonging to that particular race.")
+st.markdown("Use the filters on the sidebar to explore variations based on gender and age group.")
+
 data['HospitalStayLength'] = pd.to_numeric(data['HospitalStayLength'], errors='coerce')  # Convert to numeric
 
 # Visualization 2: Pie Chart with Slider
@@ -105,3 +110,7 @@ medication_data = data[data['num_medications'] == num_meds_slider]
 # Create pie chart
 fig = px.pie(medication_data, names='Diabetes_Med', title=f'Distribution of Diabetes Medication (Num Meds = {num_meds_slider})')
 st.plotly_chart(fig, use_container_width=True)
+
+st.markdown("The pie chart illustrates the distribution of patients based on whether they are taking diabetes medication or not.")
+st.markdown("Each segment of the pie represents a distinct category related to diabetes medication.")
+st.markdown("Use the slider on the sidebar to choose the number of medications and explore how the distribution changes accordingly.")
